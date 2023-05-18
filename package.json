@@ -6,7 +6,9 @@
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D",
-    "editFm": "node utils/editFrontmatter.js"
+    "editFm": "node utils/editFrontmatter.js",
+    "build-urls": "node utils/baiduPush.js",
+    "baiduPush": "bash baiduPush.sh"
   },
   "license": "MIT",
   "devDependencies": {
