@@ -90,7 +90,7 @@ postList: none
 ```yaml
 - name: Zyplayer-doc
   desc: 私有化部署知识库
-  link: http://doc.zyplayer.com/
+  link: http://doc.zyplayer.com/?from=electron-egg
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
 - name: Dromara 社区
