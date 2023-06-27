@@ -3,17 +3,19 @@ module.exports = [
   ["link", { rel: "icon", href: "/img/favicon.ico" }],
   ["meta", { name: "keywords", content:"electron-egg,ElectronEgg,EE,ee,electron,framework,electron-egg教程,electron-egg架构,electron-egg控制台,egg" }],
   ["meta", { name: "theme-color", content: "#fff" }],
-  ["script", { crossorigin: "anonymous", async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708221248260848"}],
-  // ['meta', { name: 'wwads-cn-verify', content: 'ddddddddd' }], // 广告相关，你可以去掉
-  ['script', {async: true, src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+  // google ad
+  //["script", { crossorigin: "anonymous", async: true, src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2708221248260848"}],
+  // Google 统计
   ['script', {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-DBQJBD61NC', type: 'text/javascript' }],
   ['script', {}, `
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-DBQJBD61NC');
   `],
+
+  // ['meta', { name: 'wwads-cn-verify', content: 'ddddddddd' }], // 广告相关，你可以去掉
+  ['script', {async: true, src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ['script', {}, `
     // 万维广告“禁止”广告拦截
     // function called if wwads is blocked
