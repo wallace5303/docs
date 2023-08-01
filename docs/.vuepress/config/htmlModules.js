@@ -20,10 +20,7 @@
 
 // 万维
 module.exports = {
-  sidebarT: ` 
-    <a href="https://docs.qq.com/doc/p/b6dff122b9606d91ce34c898a492dc1c0328aaac" target="_blank">
-      <img class="no-zoom" height="60" width="224" src="/img/sponsor/aiwen.jpg">
-    </a>
+  sidebarT: `
     <div>
     <span style='color: gray;font-size: smaller;'></span>
     <span style='color: #E01E5A;font-size: smaller;font-weight: bolder;float: right'>❤️<a href='/pages/fe2b29/'>成为赞助商</a></span>
