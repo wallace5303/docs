@@ -72,19 +72,6 @@ postList: none
   <a href="https://dromara.org/" target="_blank"><img src="https://plus.hutool.cn/images/dromara/dromara.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
 </p>
 
-## 🌈特别赞助
-
-::: cardList
-```yaml
-- name: 埃文科技
-  desc: 全球IP地址高精准实时定位技术领导者
-  avatar: /img/sponsor/aiwen-logo.jpg
-  link: https://docs.qq.com/doc/p/b6dff122b9606d91ce34c898a492dc1c0328aaac
-  bgColor: '#1373CC'
-  textColor: '#ffffff'
-```
-:::
-
 ## 🌳 特别用户
 ::: cardList 2
 ```yaml
