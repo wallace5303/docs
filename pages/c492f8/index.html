@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>开发 | electron-egg</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-DBQJBD61NC" type="text/javascript"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DBQJBD61NC');
+  </script>
+    <script async="true" src="https://cdn.wwads.cn/js/makemoney.js" type="text/javascript"></script>
+    <script>
+    // 万维广告“禁止”广告拦截
+    // function called if wwads is blocked
+    // https://github.com/bytegravity/whitelist-wwads
+    function ABDetected() {
+      var adBlockDetected_div = document.createElement("div");
+      document.body.appendChild(adBlockDetected_div);
+      var navbar = document.querySelector(".navbar");
+      navbar.style.cssText="transition:top 300ms;top:33px";
+      adBlockDetected_div.style.cssText = "position: fixed; top: 0; left: 0; width: 100%; background: #E01E5A; color: #fff; z-index: 9999999999; font-size: 14px; text-align: center; line-height: 1.5; font-weight: bold; padding-top: 6px; padding-bottom: 6px;";
+      adBlockDetected_div.innerHTML = "我们的广告服务商 <a style='color:#fff;text-decoration:underline' target='_blank' href='https://wwads.cn/page/end-user-privacy'>并不跟踪您的隐私</a>，为了支持本站的长期运营，请将我们的网站 <a style='color: #fff;text-decoration:underline' target='_blank' href='https://wwads.cn/page/whitelist-wwads'>加入广告拦截器的白名单</a>。";
+      document.getElementsByTagName("body")[0].appendChild(adBlockDetected_div);
+      // add a close button to the right side of the div
+      var adBlockDetected_close = document.createElement("div");
+      adBlockDetected_close.style.cssText = "position: absolute; top: 0; right: 10px; width: 30px; height: 30px; background: #E01E5A; color: #fff; z-index: 9999999999; line-height: 30px; cursor: pointer;";
+      adBlockDetected_close.innerHTML = "×";
+      adBlockDetected_div.appendChild(adBlockDetected_close);
+      // add a click event to the close button
+      adBlockDetected_close.onclick = function() {
+      this.parentNode.parentNode.removeChild(this.parentNode);
+      navbar.style.cssText="transition:top 300ms;top:0";
+      };
+    }
+
+    function vote() {
+      var voteDetected_div = document.createElement("div");
+      voteDetected_div.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; background: #7bbfea; color: #fff; z-index: 9999999999; font-size: 14px; text-align: center; line-height: 1.5; font-weight: bold; padding-top: 6px; padding-bottom: 6px;";
+      voteDetected_div.innerHTML = "<a style='color:#fff;text-decoration:underline' target='_blank' href='xxxxxx'>Easy-Es 正在参与“2022年度 OSC 中国开源项目”评选，请为我们投上宝贵的一票，谢谢！</a>";
+      document.getElementsByTagName("body")[0].appendChild(voteDetected_div);
+      voteDetected_div.onclick = function() {
+        this.remove();
+      };
+    }
+
+    function docReady(t) {
+      "complete" === document.readyState ||
+      "interactive" === document.readyState
+        ? setTimeout(t, 1)
+        : document.addEventListener("DOMContentLoaded", t);
+    }
+
+    //check if wwads' fire function was blocked after document is ready with 3s timeout (waiting the ad loading)
+    docReady(function () {
+      setTimeout(function () {
+        if( window._AdBlockInit === undefined ){
+            ABDetected();
+        }
+      }, 3000);
+    });
+  </script>
+    <meta name="description" content="一个入门简单、跨平台、企业级桌面软件开发框架">
+    <meta name="keywords" content="electron-egg,ElectronEgg,EE,ee,electron,framework,electron-egg教程,electron-egg架构,electron-egg控制台,egg">
+    <meta name="theme-color" content="#fff">
+    
+    <link rel="preload" href="/assets/css/0.styles.612de40b.css" as="style"><link rel="preload" href="/assets/js/app.e6d97b22.js" as="script"><link rel="preload" href="/assets/js/2.6e752713.js" as="script"><link rel="preload" href="/assets/js/12.5a46ab47.js" as="script"><link rel="prefetch" href="/assets/js/10.c5a21fed.js"><link rel="prefetch" href="/assets/js/100.39ecfc19.js"><link rel="prefetch" href="/assets/js/101.f9514cae.js"><link rel="prefetch" href="/assets/js/102.7687ba6a.js"><link rel="prefetch" href="/assets/js/103.a5085f21.js"><link rel="prefetch" href="/assets/js/104.9b6a3022.js"><link rel="prefetch" href="/assets/js/105.7ef9be6a.js"><link rel="prefetch" href="/assets/js/106.151d5965.js"><link rel="prefetch" href="/assets/js/107.ff90ed84.js"><link rel="prefetch" href="/assets/js/108.91d6eebb.js"><link rel="prefetch" href="/assets/js/109.3dd0f464.js"><link rel="prefetch" href="/assets/js/11.bfcdd09d.js"><link rel="prefetch" href="/assets/js/110.7ff19fdc.js"><link rel="prefetch" href="/assets/js/111.0a4bde67.js"><link rel="prefetch" href="/assets/js/112.a8ca019a.js"><link rel="prefetch" href="/assets/js/113.f7be45a1.js"><link rel="prefetch" href="/assets/js/114.52dac531.js"><link rel="prefetch" href="/assets/js/115.b2ab2358.js"><link rel="prefetch" href="/assets/js/116.bf137df1.js"><link rel="prefetch" href="/assets/js/117.7c4d005a.js"><link rel="prefetch" href="/assets/js/118.13d49ecd.js"><link rel="prefetch" href="/assets/js/119.a3030bb0.js"><link rel="prefetch" href="/assets/js/120.9a3946ff.js"><link rel="prefetch" href="/assets/js/121.0cfc851d.js"><link rel="prefetch" href="/assets/js/122.bef8bbb6.js"><link rel="prefetch" href="/assets/js/123.68cef7c6.js"><link rel="prefetch" href="/assets/js/124.cd9709c2.js"><link rel="prefetch" href="/assets/js/125.3bdfada7.js"><link rel="prefetch" href="/assets/js/126.b86c0660.js"><link rel="prefetch" href="/assets/js/127.278d17f4.js"><link rel="prefetch" href="/assets/js/128.6a2f6789.js"><link rel="prefetch" href="/assets/js/129.0471aa6b.js"><link rel="prefetch" href="/assets/js/13.d2dac210.js"><link rel="prefetch" href="/assets/js/130.9f513e5d.js"><link rel="prefetch" href="/assets/js/131.6f1ab272.js"><link rel="prefetch" href="/assets/js/132.b8ffdb53.js"><link rel="prefetch" href="/assets/js/133.49d5c5ab.js"><link rel="prefetch" href="/assets/js/134.19545183.js"><link rel="prefetch" href="/assets/js/135.9b7b95b7.js"><link rel="prefetch" href="/assets/js/136.be753840.js"><link rel="prefetch" href="/assets/js/137.4f8e4b20.js"><link rel="prefetch" href="/assets/js/138.87e68f9c.js"><link rel="prefetch" href="/assets/js/139.aa77851f.js"><link rel="prefetch" href="/assets/js/14.4b560395.js"><link rel="prefetch" href="/assets/js/140.686499c2.js"><link rel="prefetch" href="/assets/js/141.e81f16e2.js"><link rel="prefetch" href="/assets/js/142.82cba57b.js"><link rel="prefetch" href="/assets/js/143.d541f49f.js"><link rel="prefetch" href="/assets/js/144.e68a0ce0.js"><link rel="prefetch" href="/assets/js/145.5afdc673.js"><link rel="prefetch" href="/assets/js/146.90c9ccf9.js"><link rel="prefetch" href="/assets/js/147.8ae94a61.js"><link rel="prefetch" href="/assets/js/148.b3981be1.js"><link rel="prefetch" href="/assets/js/149.12d33126.js"><link rel="prefetch" href="/assets/js/15.59681fb2.js"><link rel="prefetch" href="/assets/js/150.8fda637e.js"><link rel="prefetch" href="/assets/js/151.cc3abe09.js"><link rel="prefetch" href="/assets/js/152.8c27885c.js"><link rel="prefetch" href="/assets/js/153.f5cf746c.js"><link rel="prefetch" href="/assets/js/154.da66bcf3.js"><link rel="prefetch" href="/assets/js/155.11e7e84c.js"><link rel="prefetch" href="/assets/js/156.389ffcb8.js"><link rel="prefetch" href="/assets/js/157.8060eaf6.js"><link rel="prefetch" href="/assets/js/158.95c71047.js"><link rel="prefetch" href="/assets/js/159.1fae2e64.js"><link rel="prefetch" href="/assets/js/16.210b5b94.js"><link rel="prefetch" href="/assets/js/160.ccc5a654.js"><link rel="prefetch" href="/assets/js/161.95403e29.js"><link rel="prefetch" href="/assets/js/162.0b5c727c.js"><link rel="prefetch" href="/assets/js/163.b121fd59.js"><link rel="prefetch" href="/assets/js/164.932b9f10.js"><link rel="prefetch" href="/assets/js/165.a05471d7.js"><link rel="prefetch" href="/assets/js/166.4216b7db.js"><link rel="prefetch" href="/assets/js/167.dbcead72.js"><link rel="prefetch" href="/assets/js/168.877e67e7.js"><link rel="prefetch" href="/assets/js/169.23363998.js"><link rel="prefetch" href="/assets/js/17.d9c26bf3.js"><link rel="prefetch" href="/assets/js/170.9af50db7.js"><link rel="prefetch" href="/assets/js/171.992c2ec6.js"><link rel="prefetch" href="/assets/js/172.90d3984d.js"><link rel="prefetch" href="/assets/js/173.abc87809.js"><link rel="prefetch" href="/assets/js/174.2e59c004.js"><link rel="prefetch" href="/assets/js/175.a21569ea.js"><link rel="prefetch" href="/assets/js/176.9a6d59bb.js"><link rel="prefetch" href="/assets/js/177.1a274226.js"><link rel="prefetch" href="/assets/js/178.28be5e17.js"><link rel="prefetch" href="/assets/js/179.586670a6.js"><link rel="prefetch" href="/assets/js/18.e6ed0953.js"><link rel="prefetch" href="/assets/js/180.90d005d3.js"><link rel="prefetch" href="/assets/js/181.0b4826de.js"><link rel="prefetch" href="/assets/js/182.4f4624df.js"><link rel="prefetch" href="/assets/js/19.ce080b73.js"><link rel="prefetch" href="/assets/js/20.4729b51e.js"><link rel="prefetch" href="/assets/js/21.9c3e92fa.js"><link rel="prefetch" href="/assets/js/22.a692aec9.js"><link rel="prefetch" href="/assets/js/23.b7f26f4f.js"><link rel="prefetch" href="/assets/js/24.90161aa7.js"><link rel="prefetch" href="/assets/js/25.d4989481.js"><link rel="prefetch" href="/assets/js/26.2d966543.js"><link rel="prefetch" href="/assets/js/27.05ad3515.js"><link rel="prefetch" href="/assets/js/28.8b2bfec4.js"><link rel="prefetch" href="/assets/js/29.d537397b.js"><link rel="prefetch" href="/assets/js/3.cdf1868f.js"><link rel="prefetch" href="/assets/js/30.fa12a57a.js"><link rel="prefetch" href="/assets/js/31.ea984bb2.js"><link rel="prefetch" href="/assets/js/32.ce2b1510.js"><link rel="prefetch" href="/assets/js/33.d6b21d32.js"><link rel="prefetch" href="/assets/js/34.ad3f21bf.js"><link rel="prefetch" href="/assets/js/35.592eee57.js"><link rel="prefetch" href="/assets/js/36.6eed9b28.js"><link rel="prefetch" href="/assets/js/37.eef29a5e.js"><link rel="prefetch" href="/assets/js/38.749a2561.js"><link rel="prefetch" href="/assets/js/39.25fe5105.js"><link rel="prefetch" href="/assets/js/4.83275ce4.js"><link rel="prefetch" href="/assets/js/40.3a484760.js"><link rel="prefetch" href="/assets/js/41.da877134.js"><link rel="prefetch" href="/assets/js/42.6ef4575b.js"><link rel="prefetch" href="/assets/js/43.8d9ad45e.js"><link rel="prefetch" href="/assets/js/44.50db336a.js"><link rel="prefetch" href="/assets/js/45.fe915505.js"><link rel="prefetch" href="/assets/js/46.cb2dcd08.js"><link rel="prefetch" href="/assets/js/47.06d30246.js"><link rel="prefetch" href="/assets/js/48.5e955649.js"><link rel="prefetch" href="/assets/js/49.48880e42.js"><link rel="prefetch" href="/assets/js/5.65ce13b4.js"><link rel="prefetch" href="/assets/js/50.ac2870cd.js"><link rel="prefetch" href="/assets/js/51.bdf4381d.js"><link rel="prefetch" href="/assets/js/52.3116e13d.js"><link rel="prefetch" href="/assets/js/53.c5ed563a.js"><link rel="prefetch" href="/assets/js/54.40de9379.js"><link rel="prefetch" href="/assets/js/55.706bf54b.js"><link rel="prefetch" href="/assets/js/56.f30a099d.js"><link rel="prefetch" href="/assets/js/57.c2c3a545.js"><link rel="prefetch" href="/assets/js/58.be9be6e2.js"><link rel="prefetch" href="/assets/js/59.eaaa45c1.js"><link rel="prefetch" href="/assets/js/6.12ee8f23.js"><link rel="prefetch" href="/assets/js/60.572cdbb7.js"><link rel="prefetch" href="/assets/js/61.dc65bfe0.js"><link rel="prefetch" href="/assets/js/62.ee0ab73e.js"><link rel="prefetch" href="/assets/js/63.21ebcec3.js"><link rel="prefetch" href="/assets/js/64.7fefe17a.js"><link rel="prefetch" href="/assets/js/65.8347e9a2.js"><link rel="prefetch" href="/assets/js/66.68e5afcc.js"><link rel="prefetch" href="/assets/js/67.775d6a6c.js"><link rel="prefetch" href="/assets/js/68.ff55783a.js"><link rel="prefetch" href="/assets/js/69.054f81fd.js"><link rel="prefetch" href="/assets/js/7.2a7d6eb1.js"><link rel="prefetch" href="/assets/js/70.b9de6fdb.js"><link rel="prefetch" href="/assets/js/71.599f89d7.js"><link rel="prefetch" href="/assets/js/72.98bce07c.js"><link rel="prefetch" href="/assets/js/73.79fbd04d.js"><link rel="prefetch" href="/assets/js/74.0205d3ea.js"><link rel="prefetch" href="/assets/js/75.a246d080.js"><link rel="prefetch" href="/assets/js/76.c60fe1f5.js"><link rel="prefetch" href="/assets/js/77.f4191b7b.js"><link rel="prefetch" href="/assets/js/78.c72097b3.js"><link rel="prefetch" href="/assets/js/79.b936f6fd.js"><link rel="prefetch" href="/assets/js/8.3598c3c6.js"><link rel="prefetch" href="/assets/js/80.ec12e762.js"><link rel="prefetch" href="/assets/js/81.dbfb4677.js"><link rel="prefetch" href="/assets/js/82.65b4a47b.js"><link rel="prefetch" href="/assets/js/83.23565c13.js"><link rel="prefetch" href="/assets/js/84.a14fba7b.js"><link rel="prefetch" href="/assets/js/85.2aed2816.js"><link rel="prefetch" href="/assets/js/86.1673f8fb.js"><link rel="prefetch" href="/assets/js/87.e8a81922.js"><link rel="prefetch" href="/assets/js/88.26efe9fa.js"><link rel="prefetch" href="/assets/js/89.5139834e.js"><link rel="prefetch" href="/assets/js/9.88b67f05.js"><link rel="prefetch" href="/assets/js/90.18bcba41.js"><link rel="prefetch" href="/assets/js/91.276685d2.js"><link rel="prefetch" href="/assets/js/92.b283ee18.js"><link rel="prefetch" href="/assets/js/93.6ecf407c.js"><link rel="prefetch" href="/assets/js/94.2b2145dd.js"><link rel="prefetch" href="/assets/js/95.d3e4c399.js"><link rel="prefetch" href="/assets/js/96.7013ffe9.js"><link rel="prefetch" href="/assets/js/97.a95e3391.js"><link rel="prefetch" href="/assets/js/98.be5c9fac.js"><link rel="prefetch" href="/assets/js/99.3f66e343.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.612de40b.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="electron-egg" class="logo"> <span class="site-name can-hide">electron-egg</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档" class="dropdown-title"><a href="/pages/8ef798/" class="link-title">文档</a> <span class="title" style="display:none;">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/8ef798/" class="nav-link">v3.x</a></li><li class="dropdown-item"><!----> <a href="/pages/96f672/" class="nav-link">v2.x</a></li></ul></div></div><div class="nav-item"><a href="/pages/85c531/" class="nav-link">API</a></div><div class="nav-item"><a href="/pages/132909/" class="nav-link">demo</a></div><div class="nav-item"><a href="/pages/cce31f/" class="nav-link">支持与赞助</a></div><div class="nav-item"><a href="/pages/1f0f51/" class="nav-link">知识点</a></div><div class="nav-item"><a href="/pages/eadf46/" class="nav-link">案例</a></div><div class="nav-item"><a href="/pages/c2720e/" class="nav-link">交流</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源" class="dropdown-title"><a href="/pages/c492f8/#" class="link-title">开源</a> <span class="title" style="display:none;">开源</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/dromara/electron-egg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/dromara/electron-egg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文档" class="dropdown-title"><a href="/pages/8ef798/" class="link-title">文档</a> <span class="title" style="display:none;">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/8ef798/" class="nav-link">v3.x</a></li><li class="dropdown-item"><!----> <a href="/pages/96f672/" class="nav-link">v2.x</a></li></ul></div></div><div class="nav-item"><a href="/pages/85c531/" class="nav-link">API</a></div><div class="nav-item"><a href="/pages/132909/" class="nav-link">demo</a></div><div class="nav-item"><a href="/pages/cce31f/" class="nav-link">支持与赞助</a></div><div class="nav-item"><a href="/pages/1f0f51/" class="nav-link">知识点</a></div><div class="nav-item"><a href="/pages/eadf46/" class="nav-link">案例</a></div><div class="nav-item"><a href="/pages/c2720e/" class="nav-link">交流</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源" class="dropdown-title"><a href="/pages/c492f8/#" class="link-title">开源</a> <span class="title" style="display:none;">开源</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/dromara/electron-egg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/dromara/electron-egg" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <div class="sidebar-slot sidebar-slot-top">
+    <div>
+    <span style='color: gray;font-size: smaller;'></span>
+    <span style='color: #E01E5A;font-size: smaller;font-weight: bolder;float: right'>❤️<a href='/pages/fe2b29/'>成为赞助商</a></span>
+    </div>    
+  </div> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>快速入门</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/8ef798/" class="sidebar-link">介绍</a></li><li><a href="/pages/4b9629/" class="sidebar-link">EE框架是什么？</a></li><li><a href="/pages/e64ff6/" class="sidebar-link">安装</a></li><li><a href="/pages/089f32/" class="sidebar-link">第三方使用</a></li><li><a href="/pages/a28da5/" class="sidebar-link">快速开始</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/f7cbf9/" class="sidebar-link">基础</a></li><li><a href="/pages/c492f8/" aria-current="page" class="active sidebar-link">开发</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/pages/197d56/" class="sidebar-link">加密</a></li><li><a href="/pages/2df2e6/" class="sidebar-link">打包</a></li></ul></section></li><li><a href="/pages/b61a92/" class="sidebar-link">命令</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>生成软件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>升级</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其它</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/pages/23649b/" class="sidebar-link">常见问题</a></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><span data-v-06225672>v3</span></li><li data-v-06225672><span data-v-06225672>快速入门</span></li><li data-v-06225672><span data-v-06225672>配置</span></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/wallace5303" target="_blank" title="作者" class="beLink" data-v-06225672>哆啦好梦</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-09-07</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">开发<!----></h1> <div class="page-slot page-slot-top">
+    <div class="wwads-cn wwads-horizontal page-wwads" data-id="236"></div>
+    <style>
+      .page-wwads{
+        width:100%!important;
+        min-height: 0;
+        margin: 0;
+        height: 100%;
+      }
+      .page-wwads .wwads-img img{
+        width:80px!important;
+      }
+      .page-wwads .wwads-poweredby{
+        width: 40px;
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+      }
+      .wwads-content .wwads-text, .page-wwads .wwads-text{
+        height: 100%;
+        padding-top: 5px;
+        display: block;
+      }
+    </style>
+  </div> <div class="theme-vdoing-content content__default"><h3 id="bin-js"><a href="#bin-js" class="header-anchor">#</a> bin.js</h3> <blockquote><p>ee-bin: v1.2.0</p></blockquote> <blockquote><p>ee-core: v2.5.0</p></blockquote> <p>开发环境使用的各种命令及工具配置。</p> <h4 id="文件位置"><a href="#文件位置" class="header-anchor">#</a> 文件位置</h4> <div class="language-bash extra-class"><pre class="language-bash"><code>./electron/config/bin.js
+</code></pre></div><h4 id="配置说明"><a href="#配置说明" class="header-anchor">#</a> 配置说明</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * ee-bin 配置
+ * 仅适用于开发环境
+ */</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * 命令：ee-bin dev
+   * 
+   * 开发模式服务配置
+   */</span>
+  <span class="token literal-property property">dev</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// frontend：前端服务</span>
+    <span class="token comment">// 说明：该配置的意思是，进入 frontend 目录，执行 npm run dev</span>
+    <span class="token comment">// 运行后的服务为 http://localhost:8080 </span>
+    <span class="token comment">// 如果 protocol 属性为 'file://' 那么不会执行命令，项目直接加载 indexPath 对应的文件。</span>
+    <span class="token literal-property property">frontend</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">directory</span><span class="token operator">:</span> <span class="token string">'./frontend'</span><span class="token punctuation">,</span> <span class="token comment">// frontend 目录</span>
+      <span class="token literal-property property">cmd</span><span class="token operator">:</span> <span class="token string">'npm'</span><span class="token punctuation">,</span>              <span class="token comment">// 命令</span>
+      <span class="token literal-property property">args</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'run'</span><span class="token punctuation">,</span> <span class="token string">'dev'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>    <span class="token comment">// 参数</span>
+      <span class="token literal-property property">protocol</span><span class="token operator">:</span> <span class="token string">'http://'</span><span class="token punctuation">,</span>     <span class="token comment">// 协议：'http://' 'file://'</span>
+      <span class="token literal-property property">hostname</span><span class="token operator">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>   <span class="token comment">// hostname</span>
+      <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span>              <span class="token comment">// port</span>
+      <span class="token literal-property property">indexPath</span><span class="token operator">:</span> <span class="token string">'index.html'</span>  <span class="token comment">// 'file://'协议时有效，入口文件</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// electron：主进程服务</span>
+    <span class="token comment">// 说明：该配置的意思是，在根目录，执行 electron . --env=local</span>
+    <span class="token literal-property property">electron</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">directory</span><span class="token operator">:</span> <span class="token string">'./'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">cmd</span><span class="token operator">:</span> <span class="token string">'electron'</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">args</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.'</span><span class="token punctuation">,</span> <span class="token string">'--env=local'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 前端构建
+   * 命令：ee-bin build
+   * 说明：该配置的意思是，进入 frontend 目录，执行 npm run build
+   */</span>
+  <span class="token literal-property property">build</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">directory</span><span class="token operator">:</span> <span class="token string">'./frontend'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">cmd</span><span class="token operator">:</span> <span class="token string">'npm'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">args</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'run'</span><span class="token punctuation">,</span> <span class="token string">'build'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 移动资源
+   * 命令：ee-bin rd
+   * 说明：将 dist 内容移动到 target
+   */</span>
+  <span class="token literal-property property">rd</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">dist</span><span class="token operator">:</span> <span class="token string">'./frontend/dist'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">target</span><span class="token operator">:</span> <span class="token string">'./public/dist'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 预发布模式（prod）
+   * 命令：ee-bin start
+   * 说明：该配置的意思是，在根目录，执行 electron . --env=prod
+   */</span>
+  <span class="token literal-property property">start</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">directory</span><span class="token operator">:</span> <span class="token string">'./'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">cmd</span><span class="token operator">:</span> <span class="token string">'electron'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">args</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.'</span><span class="token punctuation">,</span> <span class="token string">'--env=prod'</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 加密
+   * 命令：ee-bin encrypt
+   * 说明：多种加密功能，保护您的源码安全。
+   */</span>  
+  <span class="token literal-property property">encrypt</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// confusion - 压缩混淆加密</span>
+    <span class="token comment">// bytecode - 字节码加密</span>
+    <span class="token comment">// strict - 先混淆加密，然后字节码加密 </span>
+    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'confusion'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 文件匹配</span>
+    <span class="token comment">// ! 符号开头的意思是过滤</span>
+    <span class="token literal-property property">files</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'electron/**/*.(js|json)'</span><span class="token punctuation">,</span>
+      <span class="token string">'!electron/config/encrypt.js'</span><span class="token punctuation">,</span>
+      <span class="token string">'!electron/config/nodemon.json'</span><span class="token punctuation">,</span>
+      <span class="token string">'!electron/config/builder.json'</span><span class="token punctuation">,</span>
+      <span class="token string">'!electron/config/bin.json'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 需要加密的文件后缀，暂时只支持js</span>
+    <span class="token literal-property property">fileExt</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 混淆加密配置</span>
+    <span class="token literal-property property">confusionOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 压缩成一行</span>
+      <span class="token literal-property property">compact</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> 
+      <span class="token comment">// 删除字符串文字并将其放置在一个特殊数组中     </span>
+      <span class="token literal-property property">stringArray</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// 对stringArray的所有字符串文字进行编码，值：'none' | 'base64' | 'rc4'</span>
+      <span class="token literal-property property">stringArrayEncoding</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'none'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">// 注入死代码，注：影响性能</span>
+      <span class="token literal-property property">deadCodeInjection</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div></div>  <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/09/07, 09:43:25</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/f7cbf9/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">基础</div></a> <a href="/pages/197d56/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">加密</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/f7cbf9/" class="prev">基础</a></span> <span class="next"><a href="/pages/197d56/">加密</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="https://github.com/dromara/electron-egg" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://gitee.com/dromara/electron-egg" title="Gitee" target="_blank" class="iconfont icon-gitee"></a><a href="mailto:530353222@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2023-2023
+    <span><a href="http://www.kaka996.com" target="_blank" style="font-weight:bold">哆啦好梦</a> | <a href="http://beian.miit.gov.cn/" target=_blank>京ICP备15041380号-2</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><span class="close-but">×</span> <div>
+
+  </div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e6d97b22.js" defer></script><script src="/assets/js/2.6e752713.js" defer></script><script src="/assets/js/12.5a46ab47.js" defer></script>
+  </body>
+</html>
