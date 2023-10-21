@@ -69,6 +69,11 @@ postList: none
 
 <br/>
 <p align="center">
+  <a href="https://ad-server.paperyy.com/link/1715568487831293954" target="_blank"><img src="/img/sponsor/chatgtp.gif" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
+</p>
+
+<br/>
+<p align="center">
   <a href="https://dromara.org/" target="_blank"><img src="https://plus.hutool.cn/images/dromara/dromara.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
 </p>
 
