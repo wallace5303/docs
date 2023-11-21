@@ -67,10 +67,10 @@ postList: none
   <!-- <a href="https://www.npmjs.com/package/ee-core" target="_blank"><img src="https://img.shields.io/npm/v/ee-core" alt="npm" class="no-zoom"></a> -->
 </p>
 
-<br/>
+<!-- <br/>
 <p align="center">
   <a href="https://ad-server.paperyy.com/link/1715568487831293954" target="_blank"><img src="/img/sponsor/chatgtp.gif" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
-</p>
+</p> -->
 
 <br/>
 <p align="center">

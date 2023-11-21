@@ -22,9 +22,6 @@
 module.exports = {
   sidebarT: `
     <div>
-    <a href="https://ad-server.paperyy.com/link/1715568487831293954" target="_blank">
-      <img class="no-zoom" height="60" width="224" src="/img/sponsor/chatgtp.gif">
-    </a>
     <span style='color: gray;font-size: smaller;'></span>
     <span style='color: #E01E5A;font-size: smaller;font-weight: bolder;float: right'>❤️<a href='/pages/fe2b29/'>成为赞助商</a></span>
     </div>    
