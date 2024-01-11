@@ -22,6 +22,9 @@
 module.exports = {
   sidebarT: `
     <div>
+    <a href="/pages/352d9e/">
+      <img class="no-zoom" height="55" width="244" src="https://img01.kaka996.com/ee/rubick-3.png">
+    </a>
     <span style='color: gray;font-size: smaller;'></span>
     <span style='color: #E01E5A;font-size: smaller;font-weight: bolder;float: right'>❤️<a href='/pages/fe2b29/'>成为赞助商</a></span>
     </div>    
