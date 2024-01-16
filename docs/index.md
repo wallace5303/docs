@@ -67,15 +67,15 @@ postList: none
   <!-- <a href="https://www.npmjs.com/package/ee-core" target="_blank"><img src="https://img.shields.io/npm/v/ee-core" alt="npm" class="no-zoom"></a> -->
 </p>
 
-<br/>
-<p align="center">
-  <a href="/pages/352d9e/" ><img src="https://img01.kaka996.com/ee/rubick-1.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
-</p>
-
 <!-- <br/>
 <p align="center">
-  <a href="https://dromara.org/" target="_blank"><img src="https://plus.hutool.cn/images/dromara/dromara.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
+  <a href="/pages/352d9e/" ><img src="https://img01.kaka996.com/ee/rubick-1.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
 </p> -->
+
+<br/>
+<p align="center">
+  <a href="https://dromara.org/" target="_blank"><img src="https://plus.hutool.cn/images/dromara/dromara.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
+</p>
 
 ## 🌳 特别用户
 ::: cardList 2
