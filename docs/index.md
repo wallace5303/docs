@@ -136,10 +136,10 @@ postList: none
 ### 1. 🚀 常规桌面软件
 - 🚖 Windows平台 - demo
 
-    ![](/img/electron-egg/win-file.png)
+    ![](https://wallace5303.gitee.io/ee/images/ee-v3/ee-win-home.png)
 
 - 🚍 MacOS平台 - demo    
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/mac-socket.png)
+    ![](https://wallace5303.gitee.io/ee/images/ee-v3/ee-mac-home.png)
 
 - 🚔 Linux平台 - 国产UOS、Deepin - demo
     ![](https://wallace5303.gitee.io/ee/images/electron-egg/uos-home.png)
