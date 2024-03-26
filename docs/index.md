@@ -161,6 +161,17 @@ postList: none
 
     ![](https://wallace5303.gitee.io/ee/images/electron-egg/ee_game_1.png)
 
+### 🚂 4. 用户案例
+- 🐸 远控
+    ![](https://wallace5303.gitee.io/ee/images/ee-v3/rq/rq-1.png)
+    ![](https://wallace5303.gitee.io/ee/images/ee-v3/rq/rq-2.png)
+
+- 🐸 壁纸
+    ![](https://wallace5303.gitee.io/ee/images/electron-egg/aw/aw-3.png)
+
+- 🐸 英雄联盟助手
+    ![](https://wallace5303.gitee.io/ee/images/electron-egg/serendipity/lol-zhanji.png)
+
 <!-- ## 安全 
 <a href="https://www.murphysec.com/dr/htY0sMYDQaDn4X8iXp" alt="OSCS Status"><img src="https://www.oscs1024.com/platform/badge/dromara/easy-es.git.svg?size=small"/></a>
 
