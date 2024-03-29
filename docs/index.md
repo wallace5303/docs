@@ -69,7 +69,7 @@ postList: none
 
 <!-- <br/>
 <p align="center">
-  <a href="/pages/352d9e/" ><img src="https://img01.kaka996.com/ee/rubick-1.png" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
+  <a href="http://t.nxw.so/9WhEz" ><img src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png" target="_blank" alt="npm" class="no-zoom" style="width: 700px;border-radius: 2px;"></a>
 </p> -->
 
 <br/>

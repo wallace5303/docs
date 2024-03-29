@@ -19,6 +19,14 @@
  */
 
 // 万维
+/* <a href="https://ad-server.paperyy.com/link/1715568487831293954" target="_blank">
+<img class="no-zoom" height="60" width="224" src="/img/sponsor/chatgtp.gif">
+</a> */
+
+/* <a href="http://suo.im/cc9cV" target="_blank">
+<img class="no-zoom" height="60" width="224" src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png">
+</a> */
+
 module.exports = {
   sidebarT: `
     <div>
