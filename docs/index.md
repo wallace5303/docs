@@ -67,10 +67,10 @@ postList: none
   <!-- <a href="https://www.npmjs.com/package/ee-core" target="_blank"><img src="https://img.shields.io/npm/v/ee-core" alt="npm" class="no-zoom"></a> -->
 </p>
 
-<!-- <br/>
+<br/>
 <p align="center">
   <a href="http://t.nxw.so/9WhEz" ><img src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png" target="_blank" alt="npm" class="no-zoom" style="width: 700px;border-radius: 2px;"></a>
-</p> -->
+</p>
 
 <br/>
 <p align="center">
