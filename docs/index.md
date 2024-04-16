@@ -69,7 +69,11 @@ postList: none
 
 <br/>
 <p align="center">
-  <a href="http://t.nxw.so/9WhEz" ><img src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png" target="_blank" alt="npm" class="no-zoom" style="width: 700px;border-radius: 2px;"></a>
+  <a href="http://t.nxw.so/9WhEz" ><img src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png" target="_blank" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
+</p>
+<br/>
+<p align="center">
+  <a href="http://t.nxw.so/9iE0G" ><img src="https://wallace5303.gitee.io/ee/images/ee-v3/zydoc/logo-3.png" target="_blank" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
 </p>
 
 <br/>
