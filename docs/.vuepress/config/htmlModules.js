@@ -28,10 +28,10 @@
 module.exports = {
   sidebarT: `
     <div>
-    <a href="http://suo.im/cc9cV" target="_blank">
+    <a href="https://www.jnpfsoft.com/index.html?from=electron-egg" target="_blank">
       <img class="no-zoom" height="60" width="224" src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png">
     </a>
-    <a href="http://t.nxw.so/9iE0G" target="_blank">
+    <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank">
       <img class="no-zoom" height="60" width="224" src="https://wallace5303.gitee.io/ee/images/ee-v3/zydoc/zy-logo-4.png">
     </a>
     <span style='color: gray;font-size: smaller;'></span>
