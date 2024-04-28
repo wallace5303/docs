@@ -229,9 +229,6 @@ postList: none
     <a class="friends-item" href="https://gitee.com/dromara/liteFlow" target="_blank" >
         <img class="no-zoom friends-item-img hover-alt" :src="$withBase('/img/link/lite-flow.png')" alt="轻量，快速，稳定，可编排的组件式流程引擎">
     </a>
-    <a class="friends-item" href="https://hertzbeat.com/" target="_blank" >
-        <img class="no-zoom friends-item-img hover-alt" :src="$withBase('/img/link/hertzbeat-logo.png')" alt="易用友好的云监控系统">
-    </a>
     <a class="friends-item" href="http://forest.dtflyx.com/" target="_blank" >
         <img class="no-zoom friends-item-img hover-alt" :src="$withBase('/img/link/forest-logo.png')" alt="Forest能够帮助您使用更简单的方式编写Java的HTTP客户端" >
     </a>
