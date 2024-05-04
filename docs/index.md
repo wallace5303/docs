@@ -69,11 +69,11 @@ postList: none
 
 <br/>
 <p align="center">
-  <a href="https://www.jnpfsoft.com/index.html?from=electron-egg" target="_blank"><img src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
+  <a href="https://www.jnpfsoft.com/index.html?from=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v3/yinmai/ym-p5.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
 </p>
 <br/>
 <p align="center">
-  <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank"><img src="https://wallace5303.gitee.io/ee/images/ee-v3/zydoc/zy-logo-4.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
+  <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
 </p>
 
 <!-- <br/>
@@ -140,41 +140,41 @@ postList: none
 ### 1. 🚀 常规桌面软件
 - 🚖 Windows平台 - demo
 
-    ![](https://wallace5303.gitee.io/ee/images/ee-v3/ee-win-home.png)
+    ![](https://img01.kaka996.com/ee/images/ee-v3/ee-win-home.png)
 
 - 🚍 MacOS平台 - demo    
-    ![](https://wallace5303.gitee.io/ee/images/ee-v3/ee-mac-home.png)
+    ![](https://img01.kaka996.com/ee/images/ee-v3/ee-mac-home.png)
 
 - 🚔 Linux平台 - 国产UOS、Deepin - demo
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/uos-home.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/uos-home.png)
 
 - 🚔 Linux平台 - ubuntu - demo
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/ubuntu-db.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/ubuntu-db.png)
 
 ### 🚐 2. vue、react、angular、web 转换成桌面软件
 - 🚙 vue-ant-design（本地）
 
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/vue-antd.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/vue-antd.png)
 
 - 🚙 禅道项目管理（web项目地址）
 
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/ee-project-7.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/ee-project-7.png)
 
 ### 🚂 3. 游戏（h5相关技术开发）
 - 🚊 忍者100层
 
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/ee_game_1.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/ee_game_1.png)
 
 ### 🚂 4. 用户案例
 - 🐸 远控
-    ![](https://wallace5303.gitee.io/ee/images/ee-v3/rq/rq-1.png)
-    ![](https://wallace5303.gitee.io/ee/images/ee-v3/rq/rq-2.png)
+    ![](https://img01.kaka996.com/ee/images/ee-v3/rq/rq-1.png)
+    ![](https://img01.kaka996.com/ee/images/ee-v3/rq/rq-2.png)
 
 - 🐸 壁纸
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/aw/aw-3.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/aw/aw-3.png)
 
 - 🐸 英雄联盟助手
-    ![](https://wallace5303.gitee.io/ee/images/electron-egg/serendipity/lol-zhanji.png)
+    ![](https://img01.kaka996.com/ee/images/electron-egg/serendipity/lol-zhanji.png)
 
 <!-- ## 安全 
 <a href="https://www.murphysec.com/dr/htY0sMYDQaDn4X8iXp" alt="OSCS Status"><img src="https://www.oscs1024.com/platform/badge/dromara/easy-es.git.svg?size=small"/></a>

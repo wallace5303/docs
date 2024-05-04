@@ -29,10 +29,10 @@ module.exports = {
   sidebarT: `
     <div>
     <a href="https://www.jnpfsoft.com/index.html?from=electron-egg" target="_blank">
-      <img class="no-zoom" height="60" width="224" src="https://wallace5303.gitee.io/ee/images/ee-v3/yinmai/ym-p5.png">
+      <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v3/yinmai/ym-p5.png">
     </a>
     <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank">
-      <img class="no-zoom" height="60" width="224" src="https://wallace5303.gitee.io/ee/images/ee-v3/zydoc/zy-logo-4.png">
+      <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png">
     </a>
     <span style='color: gray;font-size: smaller;'></span>
     <span style='color: #E01E5A;font-size: smaller;font-weight: bolder;float: right'>❤️<a href='/pages/fe2b29/'>成为赞助商</a></span>
