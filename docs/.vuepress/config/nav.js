@@ -7,6 +7,7 @@ module.exports = [
       { text: 'v2.x', link: '/pages/96f672/' },
     ]
   },
+  { text: '插件', link: '/pages/300556/' },
   { text: 'API', link: '/pages/85c531/' },
   { text: 'demo', link: '/pages/132909/' },
   { text: '支持', link: '/pages/cce31f/' },
