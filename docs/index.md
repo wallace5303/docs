@@ -67,10 +67,10 @@ postList: none
   <!-- <a href="https://www.npmjs.com/package/ee-core" target="_blank"><img src="https://img.shields.io/npm/v/ee-core" alt="npm" class="no-zoom"></a> -->
 </p>
 
-<br/>
+<!-- <br/>
 <p align="center">
   <a href="https://www.jnpfsoft.com/index.html?from=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v3/yinmai/ym-p5.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
-</p>
+</p> -->
 <br/>
 <p align="center">
   <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
@@ -186,7 +186,7 @@ postList: none
 
 ## 🎉致谢
 
-**Electron-Egg** 自从2020年开源以来，获得了很多人的支持。目前社区群总计超千人，收获Star超 **4000+**。
+**Electron-Egg** 自从2020年开源以来，获得了很多人的支持。目前社区群总计超千人，收获Star超 **7000+**。
 
 这离不开社区小伙伴的支持和意见以及PR,感谢你们! 
 
