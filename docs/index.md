@@ -84,9 +84,9 @@ postList: none
 ## 🌳 特别用户
 ::: cardList 2
 ```yaml
-- name: Zyplayer-doc
-  desc: 私有化部署知识库
-  link: http://doc.zyplayer.com/?from=electron-egg
+- name: HttpsOk
+  desc: HTTPS 证书自动续签工具
+  link: https://httpsok.com/p/4FzJ
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
 - name: Dromara 社区
@@ -275,6 +275,9 @@ postList: none
 
 ## 🧲友情链接
 <div>
+  <a class="friends-item" href="https://httpsok.com/doc/" target="_blank" >
+      <img class="no-zoom friends-item-img hover-alt" :src="$withBase('/img/external/httpsok-logo.png')" >
+  </a>
   <a class="friends-item" href="ttps://gitee.com" target="_blank" >
       <img class="no-zoom friends-item-img hover-alt" :src="$withBase('/img/external/gitee-logo.png')" >
   </a>
