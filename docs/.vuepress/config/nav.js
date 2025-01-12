@@ -9,7 +9,13 @@ module.exports = [
     ]
   },
   { text: '插件', link: '/pages/300556/' },
-  { text: 'API', link: '/pages/85c531/' },
+  { 
+    text: 'API', link: '#',
+    items: [
+      { text: 'v4.x', link: '/pages/a99b72/' },
+      { text: 'v3.x', link: '/pages/8ef798/' },
+    ]
+  },
   { text: 'demo', link: '/pages/132909/' },
   { text: '支持', link: '/pages/cce31f/' },
   { text: '知识点', link: '/pages/1f0f51/' },
