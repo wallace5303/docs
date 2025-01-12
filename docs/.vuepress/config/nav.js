@@ -1,8 +1,9 @@
 module.exports = [
   { text: '首页', link: '/' },
   {
-    text: '文档', link: '/pages/8ef798/', 
+    text: 'v4', link: '/pages/909757/', 
     items: [
+      { text: 'v4.x', link: '/pages/909757/' },
       { text: 'v3.x', link: '/pages/8ef798/' },
       { text: 'v2.x', link: '/pages/96f672/' },
     ]
