@@ -10,7 +10,7 @@ bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | no
 defaultMode: light
 features: # 可选的
   - title: 入门简单
-    details: 只需懂 JavaScript
+    details: 支持 js、ts
   - title: 跨平台
     details: windows、Mac、Linux
   - title: 开源免费
