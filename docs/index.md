@@ -3,17 +3,16 @@ home: true
 heroImage: /img/logo.png
 heroText: Electron-Egg
 tagline: 一个入门简单、跨平台、企业级桌面软件开发框架
-actionText: 🚀开始使用
+actionText: ⛵️ v4.0.0 文档
 actionLink: /pages/987b1c/
-
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 defaultMode: light
 features: # 可选的
-  - title: 入门简单
+  - title: 🧬 入门简单
     details: 支持 js、ts
-  - title: 跨平台
+  - title: 🧩 跨平台
     details: windows、Mac、Linux
-  - title: 开源免费
+  - title: 🍱 开源免费
     details: GitHub、Gitee
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表

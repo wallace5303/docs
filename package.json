@@ -27,6 +27,12 @@
   },
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.9.9",
+    "axios": "^0.21.1",
+    "element-ui": "^2.15.9",
+    "pinia": "^2.2.6",
+    "store2": "^2.13.2",
+    "vue": "^2.7.16",
+    "core-js": "2.x",
     "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
