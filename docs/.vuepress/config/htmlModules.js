@@ -28,8 +28,8 @@
 module.exports = {
   sidebarT: `
     <div>
-    <a href="https://www.jnpfsoft.com/index.html?from=electron-egg" target="_blank">
-      <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v3/yinmai/ym-p5.png">
+    <a href="https://gaiyan.net?from=electron-egg" target="_blank">
+      <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v4/gaiyan/side.png">
     </a>
     <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank">
       <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png">

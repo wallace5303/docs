@@ -72,6 +72,10 @@ postList: none
 </p> -->
 <br/>
 <p align="center">
+  <a href="https://gaiyan.net?from=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v4/gaiyan/home.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
+</p>
+<br/>
+<p align="center">
   <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
 </p>
 
