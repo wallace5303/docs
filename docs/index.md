@@ -3,7 +3,7 @@ home: true
 heroImage: /img/logo.png
 heroText: Electron-Egg
 tagline: 一个入门简单、跨平台、企业级桌面软件开发框架
-actionText: ⛵️ v4.0.0 文档
+actionText: ⛵️ v4.1.0 文档
 actionLink: /pages/987b1c/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 defaultMode: light
