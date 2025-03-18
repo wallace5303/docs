@@ -13,7 +13,7 @@ module.exports = [
     text: 'API', link: '#',
     items: [
       { text: 'v4.x', link: '/pages/a99b72/' },
-      { text: 'v3.x', link: '/pages/8ef798/' },
+      { text: 'v3.x', link: '/pages/85c531/' },
     ]
   },
   { text: 'demo', link: '/pages/132909/' },
