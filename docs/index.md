@@ -76,6 +76,10 @@ postList: none
 </p>
 <br/>
 <p align="center">
+  <a href="https://github.com/MrJack351/electron-desktop?from=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v4/seabox/side.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
+</p>
+<br/>
+<p align="center">
   <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank"><img src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png" alt="npm" class="no-zoom" style="width: 600px;border-radius: 2px;"></a>
 </p>
 
@@ -92,9 +96,9 @@ postList: none
   link: https://httpsok.com/p/4FzJ
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
-- name: Dromara 社区
-  desc: 让每一位开源爱好者，体会到开源的快乐。
-  link: https://github.com/dromara
+- name: SeaBox跨境助手
+  desc: 跨境助手，多账户管理工具，双向聊天实时翻译。
+  link: https://github.com/MrJack351/electron-desktop
   bgColor: '#f1f1f1'
   textColor: '#2A3344'  
 ```
@@ -149,25 +153,8 @@ postList: none
 - 🚍 MacOS平台 - demo    
     ![](https://img01.kaka996.com/ee/images/ee-v3/ee-mac-home.png)
 
-- 🚔 Linux平台 - 国产UOS、Deepin - demo
+- 🚔 Linux平台 - UOS、Deepin、ubuntu - demo
     ![](https://img01.kaka996.com/ee/images/electron-egg/uos-home.png)
-
-- 🚔 Linux平台 - ubuntu - demo
-    ![](https://img01.kaka996.com/ee/images/electron-egg/ubuntu-db.png)
-
-### 🚐 2. vue、react、angular、web 转换成桌面软件
-- 🚙 vue-ant-design（本地）
-
-    ![](https://img01.kaka996.com/ee/images/electron-egg/vue-antd.png)
-
-- 🚙 禅道项目管理（web项目地址）
-
-    ![](https://img01.kaka996.com/ee/images/electron-egg/ee-project-7.png)
-
-### 🚂 3. 游戏（h5相关技术开发）
-- 🚊 忍者100层
-
-    ![](https://img01.kaka996.com/ee/images/electron-egg/ee_game_1.png)
 
 ### 🚂 4. 用户案例
 - 🐸 远控
