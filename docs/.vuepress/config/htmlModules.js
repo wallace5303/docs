@@ -31,8 +31,8 @@ module.exports = {
     <a href="https://gaiyan.net?from=electron-egg" target="_blank">
       <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v4/gaiyan/side.png">
     </a>
-    <a href="https://github.com/MrJack351/electron-desktop111?from=electron-egg" target="_blank">
-      <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v4/seabox/side.png">
+    <a href="https://github.com/MrJack351/electron-desktop?from=electron-egg" target="_blank">
+      <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v4/seabox/side.jpg">
     </a>
     <a href="http://doc.zyplayer.com/#/integrate/zyplayer-doc?utm=electron-egg" target="_blank">
       <img class="no-zoom" height="60" width="224" src="https://img01.kaka996.com/ee/images/ee-v3/zydoc/zy-logo-4.png">
