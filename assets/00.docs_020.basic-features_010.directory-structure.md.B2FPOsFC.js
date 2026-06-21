@@ -1,0 +1,37 @@
+import{_ as n,o as a,c as e,a3 as p}from"./chunks/framework.CP7W6Imw.js";const f=JSON.parse('{"title":"Directory Structure","description":"","frontmatter":{"title":"Directory Structure"},"headers":[],"relativePath":"00.docs/020.basic-features/010.directory-structure.md","filePath":"00.docs/020.basic-features/010.directory-structure.md","lastUpdated":1782050772000}'),i={name:"00.docs/020.basic-features/010.directory-structure.md"};function t(l,s,c,r,o,d){return a(),e("div",null,[...s[0]||(s[0]=[p(`<h3 id="directory-structure-and-description" tabindex="-1">Directory Structure and Description <a class="header-anchor" href="#directory-structure-and-description" aria-label="Permalink to &quot;Directory Structure and Description&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>project</span></span>
+<span class="line"><span>├── package.json npm package configuration</span></span>
+<span class="line"><span>├── bulid Packaging resources and scripts</span></span>
+<span class="line"><span>    ├── icons Software icons (used for packaging)</span></span>
+<span class="line"><span>    ├── extraResources Extra resources directory</span></span>
+<span class="line"><span>├── cmd Script/packaging command configuration</span></span>
+<span class="line"><span>    ├── bin.js Development environment configuration    </span></span>
+<span class="line"><span>    ├── builder-xxx.json Packaging configuration</span></span>
+<span class="line"><span>├── electron Main process service</span></span>
+<span class="line"><span>    ├── main.js Entry file </span></span>
+<span class="line"><span>    ├── config Configuration files</span></span>
+<span class="line"><span>        ├── config.default.js Default configuration, always loaded</span></span>
+<span class="line"><span>        ├── config.local.js Loaded in dev environment</span></span>
+<span class="line"><span>        ├── config.prod.js Loaded in production environment</span></span>
+<span class="line"><span>    ├── controller Controllers</span></span>
+<span class="line"><span>    ├── service Business layer</span></span>
+<span class="line"><span>    ├── preload Preload</span></span>
+<span class="line"><span>        ├── index.js Entry file, loaded at program startup. Features like tray, auto-update, etc. need to be loaded early</span></span>
+<span class="line"><span>        ├── bridge.js Bridge file</span></span>
+<span class="line"><span>        ├── lifecycle.js Lifecycle functions</span></span>
+<span class="line"><span>    ├── jobs Tasks</span></span>
+<span class="line"><span>├── frontend Frontend directory (the demo is written with vue)  </span></span>
+<span class="line"><span>├── go Go directory (optional)</span></span>
+<span class="line"><span>├── out Executable files generated after packaging</span></span>
+<span class="line"><span>    ├── latest.yml Auto-update file</span></span>
+<span class="line"><span>    ├── xxx.exe Windows application installer</span></span>
+<span class="line"><span>    ├── xxx.exe.blockmap Windows application incremental update package</span></span>
+<span class="line"><span>    ├── xxx.dmg macOS application installer</span></span>
+<span class="line"><span>    ├── xxx.deb Linux application installer (various suffixes)    </span></span>
+<span class="line"><span>├── logs Logs </span></span>
+<span class="line"><span>├── public Resources directory</span></span>
+<span class="line"><span>    ├── dist Frontend resources are moved here, loaded in production</span></span>
+<span class="line"><span>    ├── electron Main process code, loaded in production</span></span>
+<span class="line"><span>    ├── html Some templates</span></span>
+<span class="line"><span>    ├── images Some images</span></span>
+<span class="line"><span>├── data Built-in database files</span></span>
+<span class="line"><span>    ├── sqlite-demo.db Example sqlite database</span></span></code></pre></div>`,2)])])}const g=n(i,[["render",t]]);export{f as __pageData,g as default};

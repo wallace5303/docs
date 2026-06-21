@@ -1,0 +1,1 @@
+const s="/img/electron-egg/showcase/mayfly-p1.png",e="/img/electron-egg/showcase/mayfly-p2.png",o="/img/electron-egg/showcase/mayfly-p3.png",g="/img/electron-egg/showcase/mayfly-p4.png";export{s as _,e as a,o as b,g as c};
