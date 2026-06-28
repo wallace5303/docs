@@ -1,0 +1,37 @@
+import{_ as n,o as a,c as p,a3 as e}from"./chunks/framework.BveOjhN0.js";const x=JSON.parse('{"title":"目录结构","description":"","frontmatter":{"title":"目录结构"},"headers":[],"relativePath":"zh/00.docs/020.basic-features/010.directory-structure.md","filePath":"zh/00.docs/020.basic-features/010.directory-structure.md","lastUpdated":1782655224000}'),l={name:"zh/00.docs/020.basic-features/010.directory-structure.md"};function c(i,s,t,o,r,d){return a(),p("div",null,[...s[0]||(s[0]=[e(`<h3 id="目录结构及说明" tabindex="-1">目录结构及说明 <a class="header-anchor" href="#目录结构及说明" aria-label="Permalink to &quot;目录结构及说明&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>project</span></span>
+<span class="line"><span>├── package.json npm包配置</span></span>
+<span class="line"><span>├── bulid 打包用的资源和脚本</span></span>
+<span class="line"><span>    ├── icons 软件图标（打包用到）</span></span>
+<span class="line"><span>    ├── extraResources 额外资源目录</span></span>
+<span class="line"><span>├── cmd 脚本/打包 命令配置</span></span>
+<span class="line"><span>    ├── bin.js 开发环境配置    </span></span>
+<span class="line"><span>    ├── builder-xxx.json 打包配置</span></span>
+<span class="line"><span>├── electron 主进程服务</span></span>
+<span class="line"><span>    ├── main.js 入口文件 </span></span>
+<span class="line"><span>    ├── config 配置文件</span></span>
+<span class="line"><span>        ├── config.default.js 默认配置，都会加载</span></span>
+<span class="line"><span>        ├── config.local.js dev环境加载</span></span>
+<span class="line"><span>        ├── config.prod.js 生产环境加载</span></span>
+<span class="line"><span>    ├── controller 控制器</span></span>
+<span class="line"><span>    ├── service 业务层</span></span>
+<span class="line"><span>    ├── preload 预加载</span></span>
+<span class="line"><span>        ├── index.js 入口文件，在程序启动时加载，如托盘、自动升级等功能要提前加载代码</span></span>
+<span class="line"><span>        ├── bridge.js 桥接文件</span></span>
+<span class="line"><span>        ├── lifecycle.js 生命周期函数</span></span>
+<span class="line"><span>    ├── jobs 任务</span></span>
+<span class="line"><span>├── frontend 前端目录（demo是用vue编写的）  </span></span>
+<span class="line"><span>├── go go目录(可选)</span></span>
+<span class="line"><span>├── out 打包后生成的可执行文件</span></span>
+<span class="line"><span>    ├── latest.yml 自动升级文件</span></span>
+<span class="line"><span>    ├── xxx.exe window应用安装包</span></span>
+<span class="line"><span>    ├── xxx.exe.blockmap window应用增量升级包</span></span>
+<span class="line"><span>    ├── xxx.dmg mac应用安装包</span></span>
+<span class="line"><span>    ├── xxx.deb linux应用安装包后缀有多种    </span></span>
+<span class="line"><span>├── logs 日志 </span></span>
+<span class="line"><span>├── public 资源目录</span></span>
+<span class="line"><span>    ├── dist 前端资源会移动到这里，生产环境加载</span></span>
+<span class="line"><span>    ├── electron 主进程代码，生产环境加载</span></span>
+<span class="line"><span>    ├── html 一些模板</span></span>
+<span class="line"><span>    ├── images 一些图片</span></span>
+<span class="line"><span>├── data 内置数据库文件</span></span>
+<span class="line"><span>    ├── sqlite-demo.db 示例sqlite数据库</span></span></code></pre></div>`,2)])])}const m=n(l,[["render",c]]);export{x as __pageData,m as default};
