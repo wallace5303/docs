@@ -2,13 +2,24 @@
 title: "ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用"
 ---
 
-# ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用
+<div class="hero">
+  <div class="hero-badges">
+    <span class="badge badge--star">⭐ 8000+ Star</span>
+    <span class="badge badge--version">🚀 v5</span>
+    <span class="badge badge--ohos">🪶 鸿蒙 HarmonyOS</span>
+  </div>
+  <h1 class="hero-title">ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用</h1>
+  <div class="hero-actions">
+    <a class="btn btn--primary" href="https://github.com/dromara/electron-egg" target="_blank" rel="noopener">GitHub 仓库 →</a>
+    <a class="btn btn--ghost" href="#写在最后">加入社区</a>
+  </div>
+</div>
 
 > 一套代码，打包 Windows、Mac、Linux，现在还能直接跑在鸿蒙（HarmonyOS）上。ElectronEgg v5 带着鸿蒙支持来了。
 
 ## 写在前面
 
-[ElectronEgg](https://github.com/dromara/electron-egg) 自 2020 年开源以来，一直的愿景很简单：**让所有开发者都能学会桌面软件研发**。它把前端、服务端的工程化思维带进桌面开发，用一套清晰的 controller / service / preload 分层架构，把 Electron 的复杂度封装起来。目前框架在全网已累计 **8000+ Star**，经过大量团队长期实践验证，请放心使用。
+[ElectronEgg](https://github.com/dromara/electron-egg) 自开源以来，一直的愿景很简单：**让所有开发者都能学会桌面软件研发**。它把前端、服务端的工程化思维带进桌面开发，用一套清晰的 controller / service / preload 分层架构，把 Electron 的复杂度封装起来。目前框架在全网已累计 **8000+ Star**，经过大量团队长期实践验证，请放心使用。
 
 v5 版本在此基础上完成了一次全新升级，最重磅的能力之一，就是——**轻松开发鸿蒙应用**。
 
@@ -44,8 +55,14 @@ v5 版本在此基础上完成了一次全新升级，最重磅的能力之一�
 
 除了鸿蒙支持，v5 对框架内核做了一次较为彻底的重构：
 
-- **ee-core 内核重构**：config、controller、jobs、core、cross、message、storage、socket、loader 等模块全面整理，API 更清晰，同时支持 CJS 与 ESM。
-- **更现代的工程化**：TypeScript 优先，构建链升级，开发体验更顺滑。
+- TypeScript 全面重构：所有 API 均有完整类型定义。
+- 双模块格式输出：同时支持 CJS 和 ESM 两种格式。
+- Pino 日志体系：更强大的日志记录功能。
+- Bundle 注册表机制：启动更快。
+- 主进程打包： 主进程代码可以像前端 bundle 。
+- 构建配置全面增强：新增大量精细控制项。
+- 加密系统升级： 更安全。
+- ee-bin 全面升级：新增完整 TypeScript 类型体系。
 
 ## 谁适合用
 
@@ -63,8 +80,192 @@ v5 版本在此基础上完成了一次全新升级，最重磅的能力之一�
 框架已广泛应用于记账、政务、企业、医疗、学校、股票交易、ERP、娱乐、视频等领域的客户端，欢迎放心使用。
 
 ::: tip 开源与社区
-- GitHub：[ElectronEgg](https://github.com/dromara/electron-egg)
-- Gitee：[ElectronEgg](https://gitee.com/dromara/electron-egg)
+- GitHub：[https://github.com/dromara/electron-egg](https://github.com/dromara/electron-egg)
+- Gitee：[https://gitee.com/dromara/electron-egg](https://gitee.com/dromara/electron-egg)
 :::
 
 如果对你有帮助，欢迎 Star 支持，也欢迎加入社区一起交流。
+
+<style scoped>
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  margin: -1rem 0 2.5rem;
+  padding: 2.4rem 2rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  background:
+    radial-gradient(1200px 280px at 50% -120px, rgba(17, 168, 205, 0.22), transparent 70%),
+    linear-gradient(135deg, rgba(99, 102, 241, 0.10), rgba(17, 168, 205, 0.10) 60%, rgba(236, 72, 153, 0.10));
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: 0 18px 48px -24px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.10) 50%, transparent 70%);
+  background-size: 220% 100%;
+  animation: hero-sheen 7s linear infinite;
+  pointer-events: none;
+}
+@keyframes hero-sheen {
+  0% { background-position: 120% 0; }
+  100% { background-position: -120% 0; }
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: center;
+  margin-bottom: 1.3rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  backdrop-filter: blur(4px);
+}
+.badge--star { color: #b45309; background: linear-gradient(90deg, rgba(251,191,36,0.18), rgba(245,158,11,0.10)); border-color: rgba(245,158,11,0.4); }
+.badge--version { color: #1d4ed8; background: linear-gradient(90deg, rgba(59,130,246,0.18), rgba(99,102,241,0.10)); border-color: rgba(59,130,246,0.4); }
+.badge--since { color: #047857; background: linear-gradient(90deg, rgba(16,185,129,0.16), rgba(5,150,105,0.08)); border-color: rgba(16,185,129,0.4); }
+.badge--ohos { color: #be185d; background: linear-gradient(90deg, rgba(236,72,153,0.16), rgba(219,39,119,0.08)); border-color: rgba(236,72,153,0.4); }
+
+.hero-title {
+  margin: 0 auto 1.4rem;
+  max-width: 16em;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  background: linear-gradient(120deg, #6366f1 0%, #11A8CD 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn--primary {
+  color: #fff !important;
+  background: linear-gradient(120deg, #6366f1, #11A8CD);
+  box-shadow: 0 10px 24px -10px rgba(17, 168, 205, 0.7);
+}
+.btn--ghost {
+  color: var(--vp-c-brand-1) !important;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-brand-1);
+}
+
+/* ---------- Section headings ---------- */
+h2 {
+  position: relative;
+  margin-top: 2.8rem;
+  margin-bottom: 1.2rem;
+  padding: 0.35rem 0.6rem 0.35rem 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.005em;
+  background: linear-gradient(120deg, #6366f1 0%, #11A8CD 55%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+/* leading gradient marker */
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 1.6em;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #6366f1, #11A8CD, #ec4899);
+  box-shadow: 0 0 12px rgba(17, 168, 205, 0.55);
+}
+h3 {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 0.85rem;
+  color: var(--vp-c-brand-1);
+}
+h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 1.1em;
+  border-radius: 4px;
+  background: var(--vp-c-brand-1);
+  opacity: 0.6;
+}
+
+/* ---------- Blockquote ---------- */
+blockquote {
+  margin: 1.6rem 0;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-left: 4px solid #11A8CD;
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(90deg, rgba(17, 168, 205, 0.10), transparent);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* ---------- Images ---------- */
+img {
+  border-radius: 14px;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: 0 14px 36px -20px rgba(0, 0, 0, 0.45);
+}
+
+/* ---------- Inline code & code blocks ---------- */
+:not(pre) > code {
+  border-radius: 6px;
+  padding: 0.12rem 0.4rem;
+}
+div[class*='language-'] {
+  border-radius: 14px;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: 0 12px 30px -22px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Tip container ---------- */
+.custom-block.tip {
+  border: 1px solid var(--vp-c-brand-1);
+  border-left: 5px solid;
+  border-image: linear-gradient(180deg, #6366f1, #11A8CD, #ec4899) 1;
+  border-radius: 12px;
+  background:
+    radial-gradient(600px 200px at 0% 0%, rgba(17, 168, 205, 0.10), transparent 70%),
+    var(--vp-c-bg-soft);
+}
+
+/* dark mode tweaks */
+.dark .badge { background: rgba(30,30,38,0.7); }
+</style>
