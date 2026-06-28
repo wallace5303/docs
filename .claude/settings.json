@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(rmdir:*)",
+      "Bash(sudo rm:*)",
+      "Bash(sudo rmdir:*)"
+    ]
+  },
+  "skipDangerousModePermissionPrompt": true
+}
