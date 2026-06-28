@@ -37,6 +37,7 @@ const displayNameMapEn = {
   'tutorial': 'Tutorial',
   'version-relation': 'Version Relation',
   'config': 'Config',
+  'openharmony': 'OpenHarmony',
 }
 
 // Chinese directory names to Chinese display names
@@ -62,6 +63,7 @@ const displayNameMapZh = {
   'tutorial': '教程',
   'version-relation': '版本关系',
   'config': '配置',
+  'openharmony': '鸿蒙',
 }
 
 function getDisplayName(name, map) {
