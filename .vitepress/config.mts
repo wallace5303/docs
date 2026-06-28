@@ -19,8 +19,7 @@ const navEn = [
   {
     text: 'Version',
     items: [
-      { text: 'v5 (Current)', link: '/00.docs/010.getting-started/001.major-update' },
-      { text: 'v4 (Archive)', link: '/zh/v4/' },
+      { text: 'v5', link: '/00.docs/010.getting-started/001.major-update' },
     ],
   },
   { text: 'Plugins', link: '/08.plugins/01.introduction' },
@@ -42,8 +41,8 @@ const navZh = [
   {
     text: '版本',
     items: [
-      { text: 'v5 (当前版本)', link: '/zh/00.docs/010.getting-started/001.major-update' },
-      { text: 'v4 (归档版本)', link: '/zh/v4/' },
+      { text: 'v5', link: '/zh/00.docs/010.getting-started/001.major-update' },
+      { text: 'v4', link: '/zh/v4/' },
     ],
   },
   { text: '插件', link: '/zh/08.plugins/01.introduction' },
