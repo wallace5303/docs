@@ -25,7 +25,7 @@ const navEn = [
   { text: 'Plugins', link: '/08.plugins/01.introduction' },
   { text: 'API', link: '/09.api/001.tutorial/001.usage-guide' },
   { text: 'Demo', link: '/07.features/01.demo' },
-  { text: 'OpenHarmony', link: '/07.features/050.openharmony/01.getting-started' },
+  { text: 'OpenHarmony', link: '/050.openharmony/01.getting-started' },
   { text: 'Cases', link: '/04.others/020.case-study-01' },
   { text: 'Community', link: '/04.others/011.communication' },
   {
@@ -49,7 +49,7 @@ const navZh = [
   { text: '插件', link: '/zh/08.plugins/01.introduction' },
   { text: 'API', link: '/zh/09.api/001.tutorial/001.usage-guide' },
   { text: 'demo', link: '/zh/07.features/01.demo' },
-  { text: '鸿蒙', link: '/zh/07.features/050.openharmony/01.getting-started' },
+  { text: '鸿蒙', link: '/zh/050.openharmony/01.getting-started' },
   { text: '案例', link: '/zh/04.others/020.case-study-01' },
   { text: '交流', link: '/zh/04.others/011.communication' },
   {

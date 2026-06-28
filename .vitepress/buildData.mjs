@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DOCS = path.resolve(__dirname, '../docs')
 
 // Top-level content dirs, in display order (numeric prefix drives sort anyway).
-const INCLUDE_DIRS = ['00.docs', '08.plugins', '09.api', '07.features', '06.support', '04.others']
+const INCLUDE_DIRS = ['00.docs', '08.plugins', '09.api', '07.features', '050.openharmony', '06.support', '04.others']
 
 const numPrefix = (name) => {
   const m = name.match(/^(\d+)\.?/)
@@ -129,7 +129,7 @@ const INCLUDE_DIRS_V4 = ['00.v4', '04.others', '05.tips', '06.support', '07.feat
 // v4 archive Chinese display names
 const displayNameMapZhV4 = {
   // Level 1 directories
-  'v4': 'v4 归档文档',
+  'v4': 'v4',
   'api-v4': 'API (v4)',
   'others': '其它',
   'tips': '知识点',
@@ -169,5 +169,5 @@ export const sidebarZhV4 = (() => {
   const v4Base = path.join(DOCS, 'zh', 'v4')
   if (!fs.existsSync(v4Base)) return []
   const items = buildSidebar(v4Base, displayNameMapZhV4, 'zh/v4', INCLUDE_DIRS_V4)
-  return [{ text: 'v4 (归档版本)', collapsed: true, items }]
+  return [{ text: 'v4 文档', collapsed: true, items }]
 })()
