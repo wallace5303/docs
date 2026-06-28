@@ -1,5 +1,5 @@
 ---
-title: "ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用"
+title: "ElectronEgg: 全新升级v5 - 轻松开发鸿蒙应用"
 ---
 
 <div class="hero">
@@ -8,7 +8,7 @@ title: "ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用"
     <span class="badge badge--version">🚀 v5</span>
     <span class="badge badge--ohos">🪶 鸿蒙 HarmonyOS</span>
   </div>
-  <h1 class="hero-title">ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用</h1>
+  <h1 class="hero-title">ElectronEgg: 全新升级v5 - 轻松开发鸿蒙应用</h1>
   <div class="hero-actions">
     <a class="btn btn--primary" href="https://github.com/dromara/electron-egg" target="_blank" rel="noopener">GitHub 仓库 →</a>
     <a class="btn btn--ghost" href="#写在最后">加入社区</a>
@@ -23,31 +23,37 @@ title: "ElectronEgg: 桌面开发框架全新升级，轻松开发鸿蒙应用"
 
 v5 版本在此基础上完成了一次全新升级，最重磅的能力之一，就是——**轻松开发鸿蒙应用**。
 
+经过不断尝试，终于把 ElectronEgg 运行在鸿蒙设备上，虽然现在是**测试阶段**，但已经跑通了整个流程，效果图见下方。
+
 ## 鸿蒙支持：一套代码，跑在 HarmonyOS 上
 
 过去，把 Electron 应用搬到鸿蒙上几乎是一件"重新写一遍"的事。v5 把构建产物自动提取并拷贝到 HarmonyOS HAP 的资源目录中，由 HAP 工程的 web 引擎加载。**你现有的 ElectronEgg 业务代码，几乎不用改，就能以鸿蒙应用的形式运行。**
 
 下面是 ElectronEgg 的 demo 应用在 HarmonyOS 上的真实运行效果：
 
+> 应用已安装到鸿蒙系统中
+
 ![ElectronEgg demo 在鸿蒙应用中心](./images/ee-ohos-1.jpg)
 
-▲ demo 应用已安装到鸿蒙系统中（包名 `com.electronegg.demo`）
+> 应用启动
 
 ![ElectronEgg demo 启动](./images/ee-ohos-2.jpg)
 
-▲ 应用启动，进入首页
+> 框架功能演示：通信、控制器、服务等能力在鸿蒙端正常工作
 
 ![ElectronEgg demo 功能演示](./images/ee-ohos-4.jpg)
 
-▲ 框架功能演示：通信、控制器、服务等能力在鸿蒙端正常工作
+> 加载本地图片功能演示
 
 ![ElectronEgg demo 功能演示](./images/ee-ohos-10.jpg)
 
-▲ 操作系统相关功能演示
+> dock 栏功能演示
+
+![ElectronEgg demo 功能演示](./images/ee-ohos-11_1.jpg)
+
+> 加载web页面功能演示
 
 ![ElectronEgg demo 功能演示](./images/ee-ohos-12.jpg)
-
-▲ 视觉效果与硬件相关功能演示
 
 可以看到，原本在 Windows / Mac 上运行的桌面应用，在鸿蒙端从安装到各项功能都跑得很顺畅。这就是 v5 鸿蒙支持想表达的核心：**跨端不再是口号，鸿蒙是一等公民。**
 
