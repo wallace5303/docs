@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const DOCS = path.resolve(__dirname, '../docs')
 
 // Top-level content dirs, in display order (numeric prefix drives sort anyway).
-const INCLUDE_DIRS = ['00.docs', '08.plugins', '09.api', '07.features', '050.openharmony', '06.support', '04.others']
+const INCLUDE_DIRS = ['00.docs', '08.plugins', '09.api', '07.features', '11.harmonyos', '06.support', '04.others']
 
 const numPrefix = (name) => {
   const m = name.match(/^(\d+)\.?/)
@@ -37,7 +37,7 @@ const displayNameMapEn = {
   'tutorial': 'Tutorial',
   'version-relation': 'Version Relation',
   'config': 'Config',
-  'openharmony': 'OpenHarmony',
+  'harmonyos': 'HarmonyOS',
 }
 
 // Chinese directory names to Chinese display names
@@ -63,7 +63,7 @@ const displayNameMapZh = {
   'tutorial': '教程',
   'version-relation': '版本关系',
   'config': '配置',
-  'openharmony': '鸿蒙',
+  'harmonyos': '鸿蒙',
 }
 
 function getDisplayName(name, map) {
