@@ -5,9 +5,9 @@ import { sidebarZh, sidebarEn, sidebarZhV4 } from './buildData.mjs'
 const head: any[] = [
   ['link', { rel: 'icon', href: '/img/favicon.ico' }],
   ['meta', { name: 'keywords', content: 'electron-egg,ElectronEgg,EE,ee,electron,framework,desktop application,cross-platform' }],
-  // Google Analytics
-  ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-DBQJBD61NC' }],
-  ['script', {}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DBQJBD61NC');`],
+  // Google Analytics - commented out due to net::ERR_ABORTED errors in China
+  // ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-DBQJBD61NC' }],
+  // ['script', {}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DBQJBD61NC');`],
   // Baidu Tongji
   ['script', {}, `var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?6da4ceec5fb4d1c7efe0fd109cf2cc9d";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();`],
   // WWAds loader
